@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -13,6 +14,13 @@ class MainActivity : BasicActivity() {
 
     override fun setupEvents() {
 
+
+        //리니어 레이아웃의 클릭 이벤트
+
+        singUpBtn.setOnClickListener{
+
+            Toast.makeText(mContext, "회원가입 시도합니다.", Toast.LENGTH_SHORT).show()
+        }
 
 
 
