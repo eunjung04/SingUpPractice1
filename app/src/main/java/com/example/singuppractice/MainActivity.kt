@@ -13,6 +13,9 @@ class MainActivity : BasicActivity() {
 
     override fun setupEvents() {
 
+
+
+
         idEdt.addTextChangedListener(object : TextWatcher{
             override fun afterTextChanged(s: Editable?) {
               val inputVal=s.toString()
